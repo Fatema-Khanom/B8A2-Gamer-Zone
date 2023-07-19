@@ -43,7 +43,6 @@ section{
 /* nevber section start */
 
 .nav-container{
-
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -85,6 +84,7 @@ section{
     
 }
 .nav-items-container a{
+    display: flex;
     text-decoration: none;
     color: #3C354F;
     font-size: 1rem;
@@ -154,7 +154,7 @@ section{
     text-transform: uppercase;
 }
 .banner-info-container > ul{
-    
+    display: flex;
     color: #534C64;
     font-size: 1rem;
     font-weight: 500;
@@ -189,9 +189,6 @@ section{
     height: 300px;
     margin-top: 100px;
     display: inline-flex;
-
-
-
 }
 .card img {
     width: 240px;
@@ -400,26 +397,106 @@ section{
     
 }
 
-/* Adjustments for the header section */
+/* mobile size responsive */
 
 @media screen and (min-width:425px) and (max-width:576px) {
-    *{
+    .nav-container{
         box-shadow: none;
+    }
+    .logo-container{
+        margin-left: 70px;
+    }
+    .banner-info-container{
+        margin-left: 150px;
     }
     .nav-container, .nav-items-container{
     box-shadow: none;
     display: grid;
     grid-template-columns: repeat(1 , 1fr);
+    margin: 0 auto;
+    margin-left: 100px;
     
+   }
+   .banner-img-container img{
+    margin: 0 auto;
+    margin-left: 50px;
+   }
+   .play-text-section,.online-game-text{
+    margin-bottom: 10px
+    line-height: 25px;
+    margin-left: 100px;
+   }
+   .play-text-section{
+    margin-left: 33%;
+    
+   }
+   .play-text-section p{
+    text-align: center;
+    max-lines:30px ;
+   }
+   .online-game-text p{
+    text-align: inherit;
+    max-lines: 30px;
+   }
+   .play-img-container{
+    width: 300px;
+    height: auto;
+    margin-right: 20px;
+    margin-left: 20px;
+   }
+   .big-img img{
+    margin-right: 30px;
+    margin-left: 50px;
+    width: 300px;
    }
    .games-container-1,.games-container-2{
     
     display: grid;
     grid-template-columns: repeat(3,1fr);
 
+
+   }
+   #card-container{
+    margin-left: 85%;
+   }
+   .card{
+    width: 400px;
+    height: 400px;
+   }
+   .footer-content{
+
+   }
+   .footer-icon{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-left: 100px;
+    margin-right: 50px;
+   }
+   .footer-content ul{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+   }
+   .footer{
+    justify-content: center;
+    justify-items: center;
+    max-width: 100%;
+    background-size:425px;
+    margin: 0;
+    width: 1114px;
+    height: auto;
+    flex-shrink: 0;
+    
+   }
+   .footer-descrip{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-left: 25%;
    }
 
+   
+
 }
+
 
 
 
@@ -435,23 +512,28 @@ section{
         right: 100px;
         justify-content: right;
     }
-}
-.play-container,.banner-container,.nav-container{
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
-}
-.card-container{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
+
+    .play-container,.banner-container,.nav-container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .card-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+
+    }
+
+    .footer{
+        justify-content: center;
+        justify-items: center;
+        max-width: 200%;
+        margin-right: 0;
+        padding-right: 0;
+        background-size: cover;
+
+    }    
 
 }
 
-.footer{
-    justify-content: center;
-    justify-items: center;
-    max-width: 200%;
-    margin-right: 0;
-    padding-right: 0;
-    background-size: cover;
 
-}
+
